@@ -208,6 +208,18 @@ TODO(lbradford): explain explain different environments
 TODO(lbradford): explain root files and how we will organize code.
 TODO(lbradford): explain MobX. Actually might not be necessary.
 
+## Dependencies and Build tool
+
+We will use node.js and Yarn package manager to build the project and pull in
+dependencies.
+
+Please install [node.js](https://nodejs.org/en/download/)
+Please install nvm (Node Version Manager)
+- [Windows](https://github.com/nullivex/nodist)
+- [MacOS and Linux](https://github.com/nvm-sh/nvm)
+
+Please install [Yarn](https://classic.yarnpkg.com/en/docs/install/)
+
 ## Why React?
 
 TODO(lbradford): CSR vs SSR. See Solid SSR to get a better grasp on whether
@@ -246,21 +258,3 @@ TODO(lbradford): list developer cycle steps:
 - debug
 - PR
 - submit.
-
-TODO(lbradford)
-all the points from the chat on the last video call
-- add Yifei to this project.
-- Set up 1 time RTC with product owner
-
-
-
-
-- get bounds via google maps, perhaps start with a radius or a square, perhaps
-  get data via more detailed info
-
-- TODAY: Team product/prototype proposal + Individual Learnign Contract Agreement
-
-
-
-
-
