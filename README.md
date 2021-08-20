@@ -246,3 +246,21 @@ TODO(lbradford): list developer cycle steps:
 - debug
 - PR
 - submit.
+
+TODO(lbradford)
+all the points from the chat on the last video call
+- add Yifei to this project.
+- Set up 1 time RTC with product owner
+
+
+
+
+- get bounds via google maps, perhaps start with a radius or a square, perhaps
+  get data via more detailed info
+
+- TODAY: Team product/prototype proposal + Individual Learnign Contract Agreement
+
+
+
+
+
