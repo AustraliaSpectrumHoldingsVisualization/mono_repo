@@ -260,4 +260,5 @@ TODO(lbradford): list developer cycle steps:
 - submit.
 
 TODO(lbradford):
-config + scripts + Firebase Tools + commands to use to oull dependneice,s git, and build project and upload etc. Local host vs your dev. 
+config + scripts + Firebase Tools + commands to use to oull dependneice,s git, and build project and upload etc. Local host vs your dev.
+
