@@ -1,4 +1,3 @@
-
 # log files
 
 npm-debug.log*
@@ -20,6 +19,7 @@ client/src/google-services.js
 # Client Artifacts
 
 client/.firebase
+client/.firebaserc
 client/node_modules
 client/build
 
@@ -28,5 +28,6 @@ client/build
 # Server Artfiacts
 
 server/.firebase
+server/.firebaserc
 server/node_modules
 server/build
