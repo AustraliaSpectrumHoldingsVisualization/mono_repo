@@ -3,9 +3,9 @@ const fs = require('fs');
 
 (async () => {
   try {
-    var args = process.argv.slice(2);
+    const args = process.argv.slice(2);
   
-    var env;
+    let env;
   
     if (args[0] === '--prod') {
       if (process.env.CI === undefined) {
@@ -37,11 +37,11 @@ const fs = require('fs');
     }
 
     fs.writeFileSync(
-      `config/${env}/devsecops/webhosting-token.txt`,
+      `config/${env.toLowerCase()}/devsecops/webhosting-token.txt`,
       Buffer.from(process.env[`WEB_HOSTING_TOKEN_${env}`], 'base64')
     );
     fs.writeFileSync(
-      `config/${env}/client/google-services.json`,
+      `config/${env.toLowerCase()}/client/google-services.json`,
       Buffer.from(process.env[`CLIENT_GOOGLE_SERVICES_JSON_${env}`], 'base64')
     );
   } catch (err) {

@@ -2,11 +2,11 @@
 const fs = require('fs');
 
 function writeFirebaseToClient(env) {
-  var firebaseConfig = require(
+  const firebaseConfig = require(
     `../config/${env}/client/google-services.json`
   );
 
-  var newLines = [];
+  let newLines = [];
 
   newLines.push('export default {');
   newLines.push(`  apiKey: "${firebaseConfig.apiKey}",`);
@@ -19,7 +19,7 @@ function writeFirebaseToClient(env) {
   newLines.push(`  measurementId: "${firebaseConfig.measurementId}"`);
   newLines.push('};');
 
-  var newGoogleServicesJs = '';
+  let newGoogleServicesJs = '';
   for (const line of newLines) {
     newGoogleServicesJs = newGoogleServicesJs + line + '\n';
   }
@@ -29,9 +29,9 @@ function writeFirebaseToClient(env) {
 
 (async () => {
   try {
-    var args = process.argv.slice(2);
+    const args = process.argv.slice(2);
   
-    var env;
+    let env;
   
     if (args[0] === '--prod') {
       if (process.env.CI === undefined) {
@@ -53,7 +53,7 @@ function writeFirebaseToClient(env) {
     }
 
     // Firebase client config
-    writeFirebaseToClient(env);
+    writeFirebaseToClient(env.toLowerCase());
 
     // Web, SSL and DNS are handled via Firebase Hosting
   } catch (err) {
