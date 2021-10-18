@@ -1,0 +1,48 @@
+name: Staging DevSecOps Build Test Deploy
+
+# https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#on
+on: # [push, pull_request]
+  push:
+    branches-exclude:
+      - master
+  pull_request:
+    branches-exclude:
+      - master
+
+# https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobs
+# Jobs run in parallel by default. Steps run in series.
+jobs:
+  buildTestDeploy:
+    timeout-minutes: 20
+
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest] # macos-latest, windows-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+      - name: Install Node.js, NPM and Yarn
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.18.1'
+          cache: 'yarn'
+          cache-dependency-path: |
+            server/yarn.lock
+            client/yarn.lock
+      - name: Install, Build, Test, Deploy
+        # https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#env
+        env:
+          WEB_HOSTING_TOKEN_STAGING:           ${{ secrets.WEB_HOSTING_TOKEN_STAGING }}
+          CLIENT_GOOGLE_SERVICES_JSON_STAGING: ${{ secrets.CLIENT_GOOGLE_SERVICES_JSON_STAGING }}
+          CI: true
+        shell: pwsh # PowerShell
+        run: |
+          cd client
+          yarn
+          yarn test
+          yarn build-web-staging
+          yarn deploy-web-staging
+          yarn test-e2e-staging   

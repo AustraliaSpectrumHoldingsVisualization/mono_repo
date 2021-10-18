@@ -1,0 +1,51 @@
+{
+  "include": [
+    "src/**/*",
+  ],
+  "compilerOptions": {
+    // "baseUrl": "./",
+    "target": "ES2018",
+    "removeComments": true,
+    /* You very likely want "CommonJS" for node projects https://www.typescriptlang.org/tsconfig */
+    /* Compile to CommonJS for greater browser compatibility */
+    /* Choose ESNext to allow for webpack treeshaking https://webpack.js.org/guides/typescript/#loader */
+    "module": "esnext",
+    "outDir": "./build/",
+    /* What APIs you expect to be available to TS. Can exclude DOM from Node TS projects */
+    "lib": ["dom", "esnext"],
+    /* Generate .d.ts files for every TypeScript or JavaScript file inside project. */
+    "declaration": true,
+    /* Generates a source map for .d.ts files which map back to the original .ts. Good for VSCode */
+    "declarationMap": true,
+    /* We are not using Babel to transpile our TypeScript. Emit compiler output files like js or sourcemaps */
+    "noEmit": false,
+    /* Converts JSX files (html in tx files) to React.createElement(theHtml) */
+    "jsx": "react",
+    "strict": true,
+    /* CLI errors and messages are colorized */
+    "pretty": true,
+    /* Generate source map files */
+    "sourceMap": true,
+    /* Additional Checks, Linter Checks */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    /* Disallows empty switch cases */
+    "noFallthroughCasesInSwitch": true,
+    /* Module Resolution Options */
+    /* Node is modern, as opposed to classic */
+    "moduleResolution": "Node",
+    /* Can use ES6 Modules and CommonJS Modules together without issue */
+    "esModuleInterop": true,
+    /* Automatically enabled due to esModuleInterop enabled */
+    "allowSyntheticDefaultImports": true,
+    /* Allow json modules (files) to be imported into code/other modules */
+    "resolveJsonModule": true,
+    /* Allow js to be used in ts files */
+    "allowJs": true
+  },
+  /* Do not use tsc on these directories and files */
+  "exclude": [
+    "node_modules",
+  ]
+}

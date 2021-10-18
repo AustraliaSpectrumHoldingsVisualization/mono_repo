@@ -194,14 +194,11 @@ to pull from.
 
 ## Analytics - Google Analytics for Firebase
 
-TODO(lbradford) is this fine Yifei? I strongly recommend we capture some
-analytics. The data captured would be:
+Comes for free, out of the box, with Firebase and Google Cloud.
 
 # DevSecOps/CICD - Github Actions
 
-TODO(lbradford): explain CICD/DevSecOps
-TODO(lbradford): explain how we share secrets and configuration files.
-TODO(lbradford): explain explain different environments
+Comes for free out of the box with Github.
 
 # Package Structure and Software Architecture, Development Patterns
 
@@ -228,13 +225,31 @@ Next is necessary.
 ## JS/TS Only
 
 TODO(lbradford)
+Any backend code, and build scripts, will be built using node.js in either
+TypeScript or JavaScript. There are no CPU bound requirements for the build
+scripts or any forseeable backend code, which means using something easier like
+node.js will ease upskilling of junior members.
 
-## Why Firebase
-## Cloud/faas > on premise/bare metal for us
+## Why Firebase/Github/Cloud over on premise/bare metal
 
-TODO(lbradford)
+There is a spectrum of compute that can be used when building projects.
+Cloud - FaaS < PaaS < Containers/VM < Baremetal - on Premise.
+
+The more lower down on the specrum, the more abstracted away the
+responsbilities of SREs are. Scaling, cross compiliation, deployment are more
+taken care of. This can decrease development time.
+
+The higher up on the spectrum, the less abstracted responsbilities of SREs are.
+This allows for greater configuration, customization, and bleeding edge
+performance. This can increase development time.
+
+For our purposes we want to optimize towards reducing development time, and
+are not running any particularly performance intense workloads. Because of this
+we will use Cloud services as much as possible.
 
 ## Why this package structure?
+
+TODO(lbradford@)
 
 ## Software Architecture Diagrams
 
@@ -261,4 +276,8 @@ TODO(lbradford): list developer cycle steps:
 
 TODO(lbradford):
 config + scripts + Firebase Tools + commands to use to oull dependneice,s git, and build project and upload etc. Local host vs your dev.
+
+TODO(lbradford): explain CICD/DevSecOps
+TODO(lbradford): explain how we share secrets and configuration files.
+TODO(lbradford): explain explain different environments
 

@@ -1,0 +1,23 @@
+{
+  // Next js and Styled
+  // https://github.com/styled-components/babel-plugin-styled-components/issues/78
+  /* https://babeljs.io/docs/en/presets */
+  "presets": [
+    /* https://babeljs.io/docs/en/babel-preset-env */
+    [
+      "@babel/preset-env",
+      {
+        "targets": "> 0.25%, not dead"
+      }
+    ],
+    /* https://babeljs.io/docs/en/babel-preset-react */
+    [
+      "@babel/preset-react"
+    ]
+    /* Do not use @babel/typescript https://webpack.js.org/guides/typescript/#loader */
+  ],
+  /* https://babeljs.io/docs/en/plugins-list */
+  "plugins": [
+    "babel-plugin-styled-components"
+  ]
+}
