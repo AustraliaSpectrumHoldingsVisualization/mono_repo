@@ -37,14 +37,14 @@ function writeFirebaseToClient(env) {
       if (process.env.CI === undefined) {
         throw Error('This should only be run on CI');
       }
-      env = 'prod';
+      env = 'PROD';
     } else if (args[0] === '--staging') {
       if (process.env.CI === undefined) {
         throw Error('This should only be run on CI');
       }
-      env = 'staging';
+      env = 'STAGING';
     } else if (args[0] === '--dev') {
-      env = 'dev';
+      env = 'DEV';
     } else {
       throw Error(
         'Please specify whether creating the dev, staging or prod config via' +

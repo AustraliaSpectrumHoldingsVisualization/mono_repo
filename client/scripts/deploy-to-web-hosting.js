@@ -7,9 +7,9 @@ const fs = require('fs');
     var env;
 
     var args = process.argv.slice(2);
-    if      (args[0] === '--prod') { env = 'prod'; }
-    else if (args[0] === '--staging') { env = 'staging'; }
-    else if (args[0] === '--dev') { env = 'dev'; }
+    if      (args[0] === '--prod') { env = 'PROD'; }
+    else if (args[0] === '--staging') { env = 'STAGING'; }
+    else if (args[0] === '--dev') { env = 'DEV'; }
     else {
       throw Error(
         'Please specify which env you are deploying for via --dev or' +
