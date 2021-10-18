@@ -4,10 +4,10 @@ name: Staging DevSecOps Build Test Deploy
 on: # [push, pull_request]
   push:
     branches-exclude:
-      - master
+      - main
   pull_request:
     branches-exclude:
-      - master
+      - main
 
 # https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobs
 # Jobs run in parallel by default. Steps run in series.
@@ -45,4 +45,4 @@ jobs:
           yarn test
           yarn build-web-staging
           yarn deploy-web-staging
-          yarn test-e2e-staging   
+          yarn test-e2e-web-staging
