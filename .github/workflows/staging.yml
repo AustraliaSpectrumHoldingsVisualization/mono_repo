@@ -45,4 +45,4 @@ jobs:
           yarn test
           yarn build-web-staging
           yarn deploy-web-staging
-          yarn test-e2e-staging   
+          yarn test-e2e-web-staging
