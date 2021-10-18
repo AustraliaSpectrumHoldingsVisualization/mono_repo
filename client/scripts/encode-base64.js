@@ -2,7 +2,7 @@
 const fs = require('fs');
 
 (async () => {
-  var args = process.argv.slice(2);
+  const args = process.argv.slice(2);
   
   if (args[0] === null) {
     throw Error('Please specify the file to encode to base64');
@@ -11,11 +11,13 @@ const fs = require('fs');
     throw Error('Please specify the output file to be written');
   }
   if (args.length !== 2) {
-    throw Error('Please only specify the file to encode to base64 and the output file.');
+    throw Error(
+      'Please only specify the file to encode to base64 and the output file.'
+    );
   }
 
   let data = fs.readFileSync(`${args[0]}`);
-  let buff = new Buffer(data);
+  let buff = new Buffer.from(data);
   let base64data = buff.toString('base64');
   
   fs.writeFileSync(args[1], base64data, { encoding: 'base64' });
