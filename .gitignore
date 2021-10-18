@@ -27,6 +27,8 @@ client/build
 
 # Server Artfiacts
 
+server/data/Spectrumholdings.xlsx
+
 server/.firebase
 server/.firebaserc
 server/node_modules
