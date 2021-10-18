@@ -14,7 +14,7 @@ const fs = require('fs');
         );
         return;
       }
-      env = 'prod';
+      env = 'PROD';
     } else if (args[0] === '--staging') {
       if (process.env.CI === undefined) {
         console.log(
@@ -22,9 +22,9 @@ const fs = require('fs');
         );
         return;
       }
-      env = 'staging';
+      env = 'STAGING';
     } else if (args[0] === '--dev') {
-      env = 'dev';
+      env = 'DEV';
       console.log(
         'No need to store the dev config in env variables. Store in files.'
       );

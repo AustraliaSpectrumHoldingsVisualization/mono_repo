@@ -4,10 +4,10 @@ name: Production DevSecOps Build Test Deploy
 on: # [push, pull_request]
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
 
 # https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobs
 # Jobs run in parallel by default. Steps run in series.
