@@ -1,0 +1,32 @@
+
+# log files
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Client Secrets
+
+client/config/dev/client/google-services.json
+client/config/staging/client/google-services.json
+client/config/prod/client/google-services.json
+
+client/config/dev/devsecops/webhosting-token.txt
+client/config/staging/devsecops/webhosting-token.txt
+client/config/prod/devsecops/webhosting-token.txt
+
+client/src/google-services.js
+
+# Client Artifacts
+
+client/.firebase
+client/node_modules
+client/build
+
+# Server Secrets
+
+# Server Artfiacts
+
+server/.firebase
+server/node_modules
+server/build
