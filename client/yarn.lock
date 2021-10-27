@@ -1442,6 +1442,20 @@
     lodash.snakecase "^4.1.1"
     p-defer "^3.0.0"
 
+"@googlemaps/js-api-loader@^1.11.1":
+  version "1.12.7"
+  resolved "https://registry.yarnpkg.com/@googlemaps/js-api-loader/-/js-api-loader-1.12.7.tgz#09a9b7477d7a016694f839f860a5e57ee15cafa8"
+  integrity sha512-RgnkggkcxMLKntF2LKuFC9WqrFqSwyBEZfjEXHLC6oLNNjGCjAwS52ixFnhXc7QzNWJk5D3fI+jKuly5k15eOg==
+  dependencies:
+    fast-deep-equal "^3.1.3"
+
+"@googlemaps/react-wrapper@^1.1.10":
+  version "1.1.10"
+  resolved "https://registry.yarnpkg.com/@googlemaps/react-wrapper/-/react-wrapper-1.1.10.tgz#13d9848adb73db51f8d33fa3fa69d846f3c21d55"
+  integrity sha512-SniXUSwQ7htzRdnT5IhuyogPAtnai2CmWt+ed1IsGCtl97jtaGFPyo2NXhMNrW96/J2vqWoc0M11DBGo2+KMNw==
+  dependencies:
+    "@googlemaps/js-api-loader" "^1.11.1"
+
 "@grpc/grpc-js@^1.3.2":
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/@grpc/grpc-js/-/grpc-js-1.4.1.tgz#799063a4ff7395987d4fceb2aab133629b003840"
@@ -1954,6 +1968,11 @@
   dependencies:
     "@types/minimatch" "*"
     "@types/node" "*"
+
+"@types/google.maps@^3.46.0":
+  version "3.46.0"
+  resolved "https://registry.yarnpkg.com/@types/google.maps/-/google.maps-3.46.0.tgz#32061ffb918879517a96950855c132d909fbc5b5"
+  integrity sha512-TvrN/+XkDSblCrkx9bJXSrYOrDeUgiPl1ec215vv4mYBuvU3YOAq0XVB32dV6r7ySctqJO1M7aEgVJsJZOgrmQ==
 
 "@types/graceful-fs@^4.1.2":
   version "4.1.5"
