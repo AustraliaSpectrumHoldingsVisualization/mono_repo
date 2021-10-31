@@ -5,13 +5,84 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>React with webpack</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div>
-    <h1>Hello Webpack</h1>
-  </div>
-  <div id='root'>
-    <h1>Hello Webpackroot</h1>
+  <div
+    id='root'
+    style='height: 100%;'
+  >
+    <div
+      id='map'
+      style='
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #aadaff
+      '
+    ></div>
+    <div
+      id='filter'
+      style='
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+      '
+    >
+      <h1
+        style='
+          text-align:center;
+        '
+      >
+        I am a filter placeholder
+      </h1>
+    </div>
+    <div
+      id='about'
+      style='
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        max-height: 30%;
+        overflow-y: scroll;
+        width: 100%;
+        max-width: 800px;
+        background-color: white;
+      '
+    >
+      <h2
+        style='
+          text-align: center;
+        '
+      >
+        About
+      </h2>
+      <h3>
+        The Australian Radio Spectrum is consumed via licences from the
+        Government to private companies based on Spectrum/Frequency, Modulation,
+        Geographical Area, and duration of the licence.<br/><br/>
+        This information is public data, but currently there is no visualization
+        tool which displays who currently owns the licence for what part of the
+        spectrum.<br/><br/>
+        This is frustrating as a consumer, since consumers cannot easily
+        find or use this spectrum information to help decide which
+        Telecommunications Provider will be the best fit for their
+        circumstances.<br/><br/>
+        Additionally, this is frustrating as a Telecommunications Provider,
+        because currently static, hard to distribute/share, internal tools such
+        as spreadsheet files must be used as the source of truth for Spectrum
+        Holding Visualization data, whimch is a bottleneck for data input when
+        making decisions on upcoming auctions of licences.<br/><br/>
+        There should be an easy way for consumers, and Telecommunications
+        Providers to view this information. Everyone uses Telecommunications,
+        this is such vital information.<br/><br/>
+      </h3>
+    </div>
   </div>
 </body>
 </html>

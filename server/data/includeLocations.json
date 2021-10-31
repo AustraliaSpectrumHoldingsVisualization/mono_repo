@@ -1,0 +1,224 @@
+{
+  "include": [
+    {
+      "location": "Greater Brisbane/Lismore",
+      "lat": "-28.8066985",
+      "lng": "153.2704661"
+    },
+    {
+      "location": "Melbourne/Ballarat",
+      "lat": "-37.5670971",
+      "lng": "143.7126523"
+    },
+    {
+      "location": "Sydney/Bathurst",
+      "lat": "-33.4189374",
+      "lng": "149.5607048"
+    },
+    {
+      "location": "Albury",
+      "lat": "-35.0257081",
+      "lng": "117.875452"
+    },
+    {
+      "location": "Armidale",
+      "lat": "-30.5002176",
+      "lng": "151.5273035"
+    },
+    {
+      "location": "Bendigo",
+      "lat": "-36.7561442",
+      "lng": "144.2626423"
+    },
+    {
+      "location": "Bundaberg/Hervey Bay",
+      "lat": "-24.8676583",
+      "lng": "152.343116"
+    },
+    {
+      "location": "Coffs Harbour",
+      "lat": "-30.2970419",
+      "lng": "152.9585513"
+    },
+    {
+      "location": "Forster/Tuncurry",
+      "lat": "-32.1904412",
+      "lng": "152.4502606"
+    },
+    {
+      "location": "Launceston",
+      "lat": "-41.4333134",
+      "lng": "147.1088671"
+    },
+    {
+      "location": "Mackay",
+      "lat": "-21.1037618",
+      "lng": "149.042688"
+    },
+    {
+      "location": "Mildura",
+      "lat": "-34.2105791",
+      "lng": "142.063563"
+    },
+    {
+      "location": "Port Macquarie",
+      "lat": "-31.4610498",
+      "lng": "152.8236594"
+    },
+    {
+      "location": "Rockhampton",
+      "lat": "-23.3390953",
+      "lng": "150.3800477"
+    },
+    {
+      "location": "Shepparton/Mooroopna",
+      "lat": "-36.3732361",
+      "lng": "145.3218787"
+    },
+    {
+      "location": "Traralgon/Morwell",
+      "lat": "-38.2017841",
+      "lng": "146.4444245"
+    },
+    {
+      "location": "Wagga Wagga",
+      "lat": "-35.1379217",
+      "lng": "147.2939957"
+    },
+    {
+      "location": "Warrnambool",
+      "lat": "-38.3696758",
+      "lng": "142.426729"
+    },
+    {
+      "location": "Margaret River",
+      "lat": "-33.9664963",
+      "lng": "114.9828602"
+    },
+    {
+      "location": "Cairns",
+      "lat": "-16.8796788",
+      "lng": "145.4367287"
+    },
+    {
+      "location": "Townsville",
+      "lat": "-19.2596318",
+      "lng": "146.8003284"
+    },
+    {
+      "location": "Toowoomba",
+      "lat": "-27.5732156",
+      "lng": "151.7867923"
+    },
+    {
+      "location": "Albury",
+      "lat": "-36.073406",
+      "lng": "146.8984696"
+    },
+    {
+      "location": "Ballarat, Bendigo",
+      "lat": "-37.5670971",
+      "lng": "143.7126523"
+    },
+    {
+      "location": "Hobart",
+      "lat": "-42.8823074",
+      "lng": "147.3110467"
+    },
+    {
+      "location": "Darwin",
+      "lat": "-12.4255293",
+      "lng": "130.7932164"
+    },
+    {
+      "location": "Tasmania",
+      "lat": "-41.3717164",
+      "lng": "141.66746"
+    },
+    {
+      "location": "Canberra",
+      "lat": "-35.2812868",
+      "lng": "149.1204446"
+    },
+    {
+      "location": "Canberra (inc. south coast of NSW)",
+      "lat": "-35.2812868",
+      "lng": "149.1204446"
+    },
+    {
+      "location": "Adelaide",
+      "lat": "-34.9983534",
+      "lng": "138.0506441"
+    },
+    {
+      "location": "Brisbane",
+      "lat": "-27.3798031",
+      "lng": "152.4326575"
+    },
+    {
+      "location": "Perth",
+      "lat": "-32.0376663",
+      "lng": "115.4010104"
+    },
+    {
+      "location": "Melbourne",
+      "lat": "-37.9701537",
+      "lng": "144.4926298"
+    },
+    {
+      "location": "Sydney",
+      "lat": "-33.8473566",
+      "lng": "150.6517693"
+    },
+    {
+      "location": "Regional WA",
+      "lat": "-24.1433652",
+      "lng": "111.9147783"
+    },
+    {
+      "location": "Regional East",
+      "lat": "-23.0589106",
+      "lng": "130.2472847"
+    },
+    {
+      "location": "North Queensland",
+      "lat": "-20.2182424",
+      "lng": "139.4933742"
+    },
+    {
+      "location": "Central Queensland",
+      "lat": "-23.7543413",
+      "lng": "141.1050062"
+    },
+    {
+      "location": "Regional Northern NSW/Southern Queensland",
+      "lat": "-18.9378675",
+      "lng": "136.7201763"
+    },
+    {
+      "location": "Regional Southern/Western NSW",
+      "lat": "-32.7504903",
+      "lng": "145.5489287"
+    },
+    {
+      "location": "Regional Victoria",
+      "lat": "-36.5487986",
+      "lng": "143.2202557"
+    },
+    {
+      "location": "Regional South Australia",
+      "lat": "-32.8702473",
+      "lng": "137.22778917"
+    },
+    {
+      "location": "Regional Western Australia",
+      "lat": "-30.1142757",
+      "lng": "121.232876"
+    },
+    {
+      "location": "Albany",
+      "lat": "-35.0257257",
+      "lng": "117.8754306"
+    }
+  ]
+}

@@ -28,6 +28,7 @@ client/build
 # Server Artfiacts
 
 server/data/Spectrumholdings.xlsx
+server/data/Spectrum Holdings - v0.1.csv
 
 server/.firebase
 server/.firebaserc
