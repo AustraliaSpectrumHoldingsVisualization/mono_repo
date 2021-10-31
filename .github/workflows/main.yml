@@ -35,8 +35,8 @@ jobs:
       - name: Install, Build, Test, Deploy
         # https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#env
         env:
-          WEB_HOSTING_TOKEN_STAGING:           ${{ secrets.WEB_HOSTING_TOKEN_PROD }}
-          CLIENT_GOOGLE_SERVICES_JSON_STAGING: ${{ secrets.CLIENT_GOOGLE_SERVICES_JSON_PROD }}
+          WEB_HOSTING_TOKEN_PROD:           ${{ secrets.WEB_HOSTING_TOKEN_PROD }}
+          CLIENT_GOOGLE_SERVICES_JSON_PROD: ${{ secrets.CLIENT_GOOGLE_SERVICES_JSON_PROD }}
           CI: true
         shell: pwsh # PowerShell
         # yarn test-e2e-prod DO NOT RUN E2E TEST ON PROD.
