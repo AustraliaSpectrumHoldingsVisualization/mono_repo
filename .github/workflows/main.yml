@@ -39,7 +39,7 @@ jobs:
           CLIENT_GOOGLE_SERVICES_JSON_PROD: ${{ secrets.CLIENT_GOOGLE_SERVICES_JSON_PROD }}
           CI: true
         shell: pwsh # PowerShell
-        # yarn test-e2e-prod DO NOT RUN E2E TEST ON PROD.
+        # yarn test-e2e-prod DO NOT RUN E2E TEST ON PROD
         run: |
           cd client
           yarn
