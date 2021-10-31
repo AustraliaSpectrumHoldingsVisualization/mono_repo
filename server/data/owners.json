@@ -1,0 +1,30 @@
+[
+  {
+    "owner": "Telstra",
+    "color": "#ff2896"
+  },
+  {
+    "owner": "Optus",
+    "color": "#00a2ad"
+  },
+  {
+    "owner": "TPG",
+    "color": "#5823c1"
+  },
+  {
+    "owner": "NBN",
+    "color": "#143b7c"
+  },
+  {
+    "owner": "Rail",
+    "color": "#0f75bc"
+  },
+  {
+    "owner": "Dense Air",
+    "color": "#dbeff2"
+  },
+  {
+    "owner": "PentaNet",
+    "color": "#f09511"
+  }
+]
